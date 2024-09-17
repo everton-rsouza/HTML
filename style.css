@@ -1,0 +1,202 @@
+/* Zera o margin e padding de todos os elementos e define box-sizing para controlar o modelo de caixa */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo básico para o corpo da página */
+body {
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Estilo para o cabeçalho do site */
+header {
+    background-color: #012541; /* Cor de fundo vermelho, semelhante ao estilo do G1 */
+    color: white; /* Texto branco */
+    padding: 1rem 0; /* Espaçamento em cima e embaixo */
+}
+
+/* Estilo do título principal (h1) no cabeçalho */
+header h1 {
+    text-align: center; /* Centraliza o título */
+}
+
+/* Estiliza o menu de navegação */
+nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: flex; /* Exibe os itens da lista em linha */
+    justify-content: center; /* Centraliza os itens */
+    padding-top: 0.5rem; /* Espaçamento acima do menu */
+}
+
+/* Estiliza os itens do menu */
+nav ul li {
+    margin: 0 1rem; /* Adiciona espaçamento entre os links */
+}
+
+/* Estiliza os links do menu */
+nav ul li a {
+    color: white; /* Cor do texto branco */
+    text-decoration: none; /* Remove o sublinhado */
+    font-weight: bold; /* Deixa o texto em negrito */
+}
+
+/* Estilo da seção de notícias principais */
+.main-news {
+    padding: 2rem 0; /* Espaçamento interno na seção */
+    background-color: #f4f4f4; /* Cor de fundo cinza claro */
+}
+
+/* Estilo do título das notícias */
+.main-news h2 {
+    text-align: center; /* Centraliza o título */
+    margin-bottom: 2rem; /* Adiciona espaço abaixo do título */
+}
+
+/* Estiliza a grid que contém as notícias */
+.news-grid {
+    display: flex; /* Organiza os itens em linha */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se quebrem em novas linhas se necessário */
+}
+
+/* Estilo para cada notícia individual */
+.news-grid article {
+    background: white; /* Cor de fundo branca */
+    padding: 1rem; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    width: 30%; /* Cada notícia ocupa 30% da largura da tela */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave para destaque */
+    transition: transform 0.3s ease-in-out; /* Animação suave ao passar o mouse */
+}
+
+/* Efeito de zoom ao passar o mouse sobre as notícias */
+.news-grid article:hover {
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho da notícia */
+}
+
+/* Estiliza as imagens das notícias */
+.news-grid img {
+    max-width: 100%; /* Garante que a imagem ocupe 100% do espaço disponível */
+    border-radius: 5px; /* Bordas arredondadas nas imagens */
+}
+
+/* Estilo para os títulos das notícias */
+.news-grid h3 {
+    margin: 1rem 0 0.5rem 0; /* Espaçamento em volta do título */
+}
+
+/* Estilo para o texto das notícias */
+.news-grid p {
+    color: #333; /* Texto cinza escuro */
+}
+
+/* Estiliza os links para ler mais */
+.news-grid a {
+    color: #012541; /* Cor dos links em vermelho */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Links em negrito */
+}
+
+/* Estilo para a seção de redes sociais */
+.social-media {
+    background-color: #f4f4f4; /* Fundo cinza claro */
+    padding: 2rem 0; /* Espaçamento em cima e embaixo */
+    text-align: center; /* Centraliza o conteúdo */
+}
+
+/* Estilo do título da seção de redes sociais */
+.social-media h2 {
+    margin-bottom: 1.5rem; /* Espaçamento abaixo do título */
+    color: #333; /* Cor do texto em cinza escuro */
+}
+
+/* Remove a formatação padrão da lista */
+.social-media ul {
+    list-style: none; /* Remove os marcadores da lista */
+    display: inline-block; /* Centraliza a lista */
+}
+
+/* Estilo para os itens de redes sociais */
+.social-media ul li {
+    display: inline; /* Exibe os itens em linha */
+    margin: 0 1rem; /* Espaçamento entre os itens */
+}
+
+/* Estilo dos links de redes sociais */
+.social-media a {
+    text-decoration: none; /* Remove sublinhado dos links */
+    color: #333; /* Cor do texto cinza escuro */
+    font-weight: bold; /* Negrito no texto dos links */
+}
+
+/* Estilo dos ícones de redes sociais */
+.social-media img {
+    vertical-align: middle; /* Alinha verticalmente o ícone ao texto */
+    margin-right: 0.5rem; /* Espaço entre o ícone e o nome de usuário */
+}
+
+/* Estilo básico para o rodapé */
+footer {
+    background-color: #012541; /* Fundo vermelho */
+    color: white; /* Texto branco */
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem 0; /* Espaçamento interno */
+    margin-top: 2rem; /* Espaçamento superior */
+}
+
+.textos{
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    font-size: 150%;
+    margin: 50px;
+}
+iframe{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+button.prev, button.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+p {
+    text-align: justify;
+}

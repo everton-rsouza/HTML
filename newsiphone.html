@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Padronizando o tamanho do carrossel */
+        .carousel-container {
+            position: relative;
+            width: 100%; /* Ajusta a largura do carrossel */
+            max-width: 600px; /* Tamanho máximo do carrossel */
+            margin: 0 auto; /* Centraliza o carrossel */
+            overflow: hidden; /* Esconde as imagens que estão fora da tela */
+        }
+
+        .carousel-slide img {
+            width: 100%; /* Imagens ocupam toda a largura da div */
+            height: 400px; /* Altura padrão das imagens */
+            object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+            display: none; /* Esconde todas as imagens por padrão */
+        }
+
+        /* Botões de navegação */
+        .prev-btn, .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 24px;
+            z-index: 1;
+        }
+
+        .prev-btn {
+            left: 10px;
+        }
+
+        .next-btn {
+            right: 10px;
+        }
+
+    </style>
+</head>
+<body>
+        <header><h1>Tech News</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </header>
+<div class="textos">
+    <h1 style="display: flex; justify-content: center; margin: 50px;">Apple anuncia iPhone 16 com recursos de IA,<br> novas cores e mudança no sistema de câmeras</h1>
+
+    <p>A Apple revelou nesta segunda-feira (9) a nova geração de seu smartphone, o iPhone 16, durante um evento na sede da empresa em Cupertino, Califórnia. Com o slogan “It’s Glowtime” (É hora de brilhar), o CEO Tim Cook apresentou as inovações que marcam a nova linha de dispositivos, com destaque para a integração de inteligência artificial, um novo sistema de câmeras e novas opções de cores.</p>
+
+    <!-- Carrossel de imagens -->
+    <div class="carousel-container">
+        <div class="carousel-slide">
+            <img src="https://s2-oglobo.glbimg.com/SwnQ6V_L1VTuOFswagHdmLH0wZ8=/0x0:1920x1440/888x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/B/H/EREczjTeebLTspTaRmeg/thumbnail-img-6112.jpg" alt="Imagem 1">
+            <img src="https://s2.glbimg.com/DVe__BxQ5KGim-3h1ET5AoAs5JA=/0x0:1920x1080/1080x0/smart/filters:quality(70)/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/k/K/laEDK2Q766hE36rMSf3Q/imagem-8-.png" alt="Imagem 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs4gH047XbGLb6pGVtmByp9MUBtquMhL3l4Q&s" alt="Imagem 3">
+            <img src="https://files.tecnoblog.net/wp-content/uploads/2024/09/iphone-16-pro-cores-corpo-1060x596.jpg" alt="Imagem 4">
+        </div>
+        <!-- Botões para navegação -->
+        <button class="prev-btn" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next-btn" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <h2 style="margin: 25px;">Inteligência Artificial (IA) aprimorada</h2>
+
+    <p>
+        O iPhone 16 chega ao mercado com uma aposta significativa na inteligência artificial generativa, por meio do novo sistema Apple Intelligence. A Siri agora está mais inteligente, capaz de interagir com o ambiente do usuário de forma ainda mais natural, graças à integração com o ChatGPT. O assistente virtual da Apple poderá, por exemplo, agendar compromissos automaticamente a partir de mensagens no iMessage e realizar tarefas complexas com comandos simplificados.
+    </p>
+    
+    <p>Além disso, a IA oferece recursos avançados para edição de fotos e textos, sumarização de e-mails e mensagens, e até geração de imagens. Essas funcionalidades são suportadas pelo novo chip A18, que garante uma performance ainda mais rápida e eficiente.</p>
+    
+    <h2 style="margin: 25px;">Melhorias de hardware no iPhone 16</h2>
+    <p style="margin: 25px;">Entre as principais atualizações do iPhone 16 e 16 Plus, destaca-se o chip A18 com processo de 3nm, que é 30% mais rápido que o processador do iPhone 15. O modelo também inclui o Botão de Ação, que estreou nos modelos Pro do ano passado, e um novo botão físico de controle de câmera localizado abaixo do botão de energia.</p>
+    <img width="600" src="https://img.odcdn.com.br/wp-content/uploads/2024/09/chip-a18-1024x682.jpg" alt="Chip A18">
+    <h2 style="margin: 25px;">Novo sistema de câmeras</h2>
+    <p>
+        Outra grande mudança no iPhone 16 está no sistema de câmeras. As lentes agora são dispostas verticalmente, um design inédito na linha de smartphones da Apple. Essa alteração é acompanhada de melhorias significativas nas capturas de fotos e vídeos, especialmente com o novo botão dedicado para fotos e vídeos nos modelos Pro, semelhante a um obturador de câmeras profissionais.
+    </p>
+    
+    <h2 style="margin: 25px;">Novas cores e conectividade de ponta</h2>
+    <p>
+        A linha iPhone 16 também traz um toque de frescor com a introdução de novas opções de cores, incluindo tons mais vibrantes que realçam o design elegante do aparelho. Além disso, a Apple confirmou que os novos iPhones são compatíveis com a tecnologia Wi-Fi 7, oferecendo uma conectividade ainda mais rápida e estável, e suporte para carregamento ultrarrápido.
+    </p>
+    
+    <p>O iPhone 16 e 16 Plus já estão disponíveis para pré-venda nos Estados Unidos, com preços a partir de US$ 799. A expectativa é que os dispositivos comecem a ser vendidos em breve em outros mercados, incluindo o Brasil.</p>
+
+    
+</div>
+<center>
+    <h2 style="margin: 25px;">Veja como foi o lançamento:</h2>
+</center>
+<center>
+    <iframe width="640" height="400" src="https://www.youtube.com/embed/uarNiSl_uh4?si=aVFQdui8w1Dd5MDx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</center>
+<footer>
+        <p>&copy; 2024 Tech News. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-slide img');
+
+    // Exibe a primeira imagem do carrossel
+    slides[currentSlide].style.display = 'block';
+
+    // Função para mover entre as imagens
+    function moveSlide(direction) {
+        slides[currentSlide].style.display = 'none'; // Esconde a imagem atual
+        currentSlide += direction;
+
+        // Verifica se o índice do slide ultrapassa o número de imagens
+        if (currentSlide < 0) {
+            currentSlide = slides.length - 1; // Volta para a última imagem
+        } else if (currentSlide >= slides.length) {
+            currentSlide = 0; // Volta para a primeira imagem
+        }
+
+        slides[currentSlide].style.display = 'block'; // Exibe a nova imagem
+    }
+</script>
+
+</body>
+</html>
